@@ -20,6 +20,8 @@ All simulation scripts are for Dedalus and must be run in a Dedalus python envir
 * Selective_lattice.ipynb simulates a pattern shown in Fig. 4e.
 * 1D_3Species.ipynb simulates a mixed seeding of strains, shown in Fig. S3
 * 3Pair_square_lattice.ipynb simulates a selective pattern requiring 3 adhesin pairs on a square grid. As shown in Fig. S27.
+
+## Analysis scripts
 * analytical_boundary_sim.ipynb simulate boundary profile shapes using analytical model, shown in Fig. S5.
 * boundary_profile_fits.ipynb shows example of boundary profile data plotted with accompanying fit and boundary width measurements. Supporting example data is in scripts/BoundaryData/
 * confocal_quantification.ipynb demonstrates example of the various quantifications of segmented confocal image data. Supporting example data is in scripts/ConfocalData/
