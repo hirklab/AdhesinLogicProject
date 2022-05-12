@@ -1,9 +1,9 @@
 # AdhesinLogicProject
 
 ## Simulation scripts 
-All simulation scripts are for Dedalus and must be run in a Dedalus python environment. The following scripts are in scripts/
-* 1D_interact.ipynb and 1D_no_interact.ipybn simulate two colonies in 1D that either have complementary adhesin pairs and form a visible interface, or don't have complementary adhesin pairs, and so don't form a visible interface. Shown in Fig. 2c and video S4.
-* 2D_interact.ipynb and 2D_interact.ipynb simulate the same problem, but now in 2D. Shown in Fig. 2c and video S4.
+All simulation scripts are for the pseudo-spectral PDE solver [Dedalus](https://dedalus-project.org/) and must be run in a Dedalus python environment. Simulations were run in a periodic domain, larger than the domain of interest, and only the center is subsequently analyzed to remove periodic effects. The output is saved in a .h5 file, which can then be used for plotting. The following scripts are in Simulation_scripts/
+* 1D_interact.ipynb and 1D_no_interact.ipybn simulate two colonies in 1D that either have complementary adhesin pairs and form a visible interface, or don't have complementary adhesin pairs, and so don't form a visible interface. Shown in Fig. 2c and Video S4.
+* 2D_interact.ipynb and 2D_interact.ipynb simulate the same problem, but now in 2D. Shown in Fig. 2c and Video S4.
 * Model_calibration.ipynb runs a parameter sweep to find the parameters that best fit the data, as shown in Fig. S1. These parameters are saved and used elsewhere. It also runs the adhesin strength sweep, shown in Fig. 2d.
 * DifferentGrowthRates.ipynb simulates colonies that expand at different rates for Fig. 2g. 
 * DifferentSeedingRatios.py is a script that simulates many different initial seeding ratios of colonies with complementary adhesin pairs, and saves an image of the final time point. Shown in Fig. 2f and 2i.
